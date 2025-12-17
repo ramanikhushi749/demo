@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<body>
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-12 mx-auto">
+
+    <!-- Page Title -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-medium text-gray-900">Fees Management</h1>
+      <p class="text-gray-500">Track and manage student fees</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap justify-between mb-6 gap-4">
+      <input type="text" placeholder="Search Student"
+        class="border border-gray-300 rounded px-4 py-2 w-full md:w-1/3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+
+      <select class="border border-gray-300 rounded px-4 py-2 w-full md:w-1/4 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        <option>Select Class</option>
+        <option>10th</option>
+        <option>11th</option>
+        <option>12th</option>
+      </select>
+
+      <input type="month"
+        class="border border-gray-300 rounded px-4 py-2 w-full md:w-1/4 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+    </div>
+
+    <!-- Fees Table -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-200 rounded-lg">
+        <thead class="bg-indigo-500 text-white">
+          <tr>
+            <th class="py-3 px-4 text-left">Photo</th>
+            <th class="py-3 px-4 text-left">Student Name</th>
+            <th class="py-3 px-4 text-left">Class</th>
+            <th class="py-3 px-4 text-left">Total Fees</th>
+            <th class="py-3 px-4 text-left">Paid</th>
+            <th class="py-3 px-4 text-left">Pending</th>
+            <th class="py-3 px-4 text-left">Status</th>
+            <th class="py-3 px-4 text-left">Action</th>
+          </tr>
+        </thead>
+
+        <tbody class="bg-white">
+
+          <!-- Student 1 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">
+              <img src="img6.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Aarav Mehta</td>
+            <td class="py-3 px-4">10th</td>
+            <td class="py-3 px-4">₹12,000</td>
+            <td class="py-3 px-4">₹8,000</td>
+            <td class="py-3 px-4">₹4,000</td>
+            <td class="py-3 px-4">
+              <span class="px-2 py-1 text-sm bg-yellow-100 text-yellow-700 rounded">
+                Partial
+              </span>
+            </td>
+            <td class="py-3 px-4">
+              <button class="bg-indigo-500 text-white px-3 py-1 rounded text-sm hover:bg-indigo-600">
+                Collect
+              </button>
+            </td>
+          </tr>
+
+          <!-- Student 2 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">
+              <img src="img7.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Priya Sharma</td>
+            <td class="py-3 px-4">12th</td>
+            <td class="py-3 px-4">₹15,000</td>
+            <td class="py-3 px-4">₹15,000</td>
+            <td class="py-3 px-4">₹0</td>
+            <td class="py-3 px-4">
+              <span class="px-2 py-1 text-sm bg-green-100 text-green-700 rounded">
+                Paid
+              </span>
+            </td>
+            <td class="py-3 px-4">
+              <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm cursor-not-allowed">
+                Completed
+              </button>
+            </td>
+          </tr>
+
+          <!-- Student 3 -->
+          <tr>
+            <td class="py-3 px-4">
+              <img src="img9.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Rahul Desai</td>
+            <td class="py-3 px-4">11th</td>
+            <td class="py-3 px-4">₹14,000</td>
+            <td class="py-3 px-4">₹5,000</td>
+            <td class="py-3 px-4">₹9,000</td>
+            <td class="py-3 px-4">
+              <span class="px-2 py-1 text-sm bg-red-100 text-red-700 rounded">
+                Pending
+              </span>
+            </td>
+            <td class="py-3 px-4">
+              <button class="bg-indigo-500 text-white px-3 py-1 rounded text-sm hover:bg-indigo-600">
+                Collect
+              </button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-12 mx-auto">
+
+    <!-- Page Title -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-medium text-gray-900">Student Attendance</h1>
+      <p class="text-gray-500">Mark attendance for each student</p>
+    </div>
+
+    <!-- Date Selector -->
+    <div class="flex justify-end mb-4">
+      <input type="date"
+        class="border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+    </div>
+
+    <!-- Attendance Table -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-200 rounded-lg">
+        <thead class="bg-indigo-500 text-white">
+          <tr>
+            <th class="py-3 px-4 text-left">Photo</th>
+            <th class="py-3 px-4 text-left">Student Name</th>
+            <th class="py-3 px-4 text-left">Class</th>
+            <th class="py-3 px-4 text-left">Age</th>
+            <th class="py-3 px-4 text-left">Attendance</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+
+          <!-- Student 1 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">
+              <img src="img6.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Aarav Mehta</td>
+            <td class="py-3 px-4">10th</td>
+            <td class="py-3 px-4">15</td>
+            <td class="py-3 px-4">
+              <label class="mr-3">
+                <input type="radio" name="aarav" class="mr-1"> Present
+              </label>
+              <label>
+                <input type="radio" name="aarav" class="mr-1"> Absent
+              </label>
+            </td>
+          </tr>
+
+          <!-- Student 2 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">
+              <img src="img7.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Priya Sharma</td>
+            <td class="py-3 px-4">12th</td>
+            <td class="py-3 px-4">17</td>
+            <td class="py-3 px-4">
+              <label class="mr-3">
+                <input type="radio" name="priya" class="mr-1"> Present
+              </label>
+              <label>
+                <input type="radio" name="priya" class="mr-1"> Absent
+              </label>
+            </td>
+          </tr>
+
+          <!-- Student 3 -->
+          <tr>
+            <td class="py-3 px-4">
+              <img src="img9.jpg" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="py-3 px-4">Rahul Desai</td>
+            <td class="py-3 px-4">11th</td>
+            <td class="py-3 px-4">16</td>
+            <td class="py-3 px-4">
+              <label class="mr-3">
+                <input type="radio" name="rahul" class="mr-1"> Present
+              </label>
+              <label>
+                <input type="radio" name="rahul" class="mr-1"> Absent
+              </label>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Save Button -->
+    <div class="flex justify-center mt-8">
+      <button class="bg-indigo-500 text-white px-6 py-2 rounded hover:bg-indigo-600">
+        Save Attendance
+      </button>
+    </div>
+
+  </div>
+</section>
+
+</section>
+</body>
+</html>
